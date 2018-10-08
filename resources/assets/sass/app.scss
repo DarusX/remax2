@@ -1,0 +1,40 @@
+
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700,900');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+//owl
+@import '~owl.carousel/src/scss/owl.carousel';
+@import '~owl.carousel/src/scss/owl.theme.default';
+
+//fancybox
+@import '~@fancyapps/fancybox/src/css/core';
+
+
+
+body{
+  color: $light;
+}
+.navbar-laravel {
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+}
+
+.title{
+  font-weight: 700;
+}
+.card-property{
+  background-size: cover;
+  background-position-x: center;
+  background-position-y: center;
+}
+
+.card-property > .card-title{
+  font-weight: bolder;
+  text-shadow: 0px 0px 6px rgba(0, 0, 0, 1);
+}
