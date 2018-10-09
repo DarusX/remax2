@@ -23,7 +23,8 @@ class CreatePropertiesTable extends Migration
             $table->double('lat');
             $table->double('lng');
             $table->string('currency');
-            $table->double('price', 14, 2);
+            $table->double('price');
+            $table->string('type');
         });
     }
 

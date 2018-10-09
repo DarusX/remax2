@@ -7,6 +7,7 @@
             <div class="card">
                 <div class="card-body card-property" style="background-image: url('{{$property->photos->first()->photo}}')">
                     <h5 class="card-title text-white ">{{$property->name}}</h5>
+                    <h6><span class="badge badge-primary">{{$property->type}}</span></h6>
                 </div>
                 <div class="card-footer d-flex justify-content-between text-right">
                     <a href="{{route('propiedad', $property)}}" class="btn btn-primary btn-sm">Ver más</a>

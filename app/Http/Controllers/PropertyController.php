@@ -98,7 +98,7 @@ class PropertyController extends Controller
         $count = 0;
 
         foreach ($props['listing'] as $prop) {
-            if($count < 5){
+            if($count < 50){
                 $property = Property::create([
                     'id' => $prop['home_listing_id'],
                     'availability' => $prop['availability'],
@@ -109,7 +109,8 @@ class PropertyController extends Controller
                     'neighborhood' => $prop['neighborhood'],
                     'price' => substr($prop['price'], 0, -4),
                     'currency' => substr($prop['price'], -3),
-                    'address' => 'address'
+                    'address' => 'address',
+                    'type' => $prop['property_type']
                 ]);
                 if(is_array($prop['image']['url'])){
                     foreach ($prop['image']['url'] as $photo) {

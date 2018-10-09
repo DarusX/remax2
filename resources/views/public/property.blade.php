@@ -4,6 +4,7 @@
     <div class="row">
         <div class="col-md-12">
             <h1 class="title">{{$property->name}}</h1>
+            <h4><span class="badge badge-primary">{{$property->type}}</span></h4>
         </div>
         <div class="col-md-6">
             <div class="owl-carousel owl-theme">
@@ -27,7 +28,7 @@
             <h3 class="title">Áreas</h3>
             <ul class="list-unstyled">
                 @foreach($property->areas as $area)
-                <li>{{$area->area}}</li>
+                <li class="d-flex justify-content-between align-items-center py-1 pl-3">{{$area->area}}</li>
                 @endforeach
             </ul>
         </div>
@@ -35,15 +36,15 @@
             <h3 class="title">Equipo</h3>
             <ul class="list-unstyled">
                 @foreach($property->equipments as $equipment)
-                <li>{{$equipment->equipment}}</li>
+                <li class="d-flex justify-content-between align-items-center py-1 pl-3">{{$equipment->equipment}}</li>
                 @endforeach
             </ul>
         </div>
         <div class="col-md-4">
             <h3 class="title">Detalles</h3>
-            <ul class="list-group">
+            <ul class="list-unstyled">
                 @foreach($property->details as $detail)
-                <li class="list-group-item d-flex justify-content-between align-items-center py-1 pl-3">
+                <li class="d-flex justify-content-between align-items-center py-1 pl-3">
                     {{$detail->detail}}
                     <span class="badge badge-primary badge-pill">{{$detail->pivot->value}}</span>
                 </li>

@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class Property extends Model
 {
     protected $fillable = [
-        'id', 'name', 'description', 'neighborhood', 'lat', 'lng', 'availability', 'address', 'price', 'currency'
+        'id', 'name', 'description', 'neighborhood', 'lat', 'lng', 'availability', 'address', 'price', 'currency', 'type'
     ];
 
     public $timestamps = false;

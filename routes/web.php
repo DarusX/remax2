@@ -11,9 +11,7 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'RemaxController@start')->name('starts');
 Route::get('propiedades', 'RemaxController@properties')->name('propiedades');
 Route::get('propiedades/{property}', 'RemaxController@property')->name('propiedad');
 
